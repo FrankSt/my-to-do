@@ -8,9 +8,6 @@
         "owner": {
             "properties": {
                 "element": {"#": "owner"}
-            },
-            "bindings": {
-                "checked": {"<->": "@owner.taak.completed"}
             }
         },
         "checkbox": {
@@ -18,6 +15,9 @@
             "properties": {
                 "element": {"#": "checkbox"},
                 "checked": true
+            },
+            "bindings": {
+                "checked": {"<-": "@owner.taak.completed"}
             }
         },
         "textField": {
